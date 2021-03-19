@@ -13,13 +13,49 @@ height:100vh;
   background-color: #253141;
   height:100px;
   padding: 0 20px;
-  
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.user-name a {
+  font-size:16px;
+  color:#FAFAFA;
+  text-decoration: none;
+}
+
+.chat-create a {
+  border: 1px,solid,lightblue;
+  padding:14px;
+  font-size:10px;
+  color:deepskyblue;
+  text-decoration: none;
 }
 
 .left-bottom{
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.room1{
+  padding: 20px 0px 40px;
+}
+
+.room1 a{
+  color:white;
+  
+  text-decoration: none;
+}
+.room2{
+  padding: 20px 0px 40px;
+}
+
+.room2 a{
+  color:white;
+  padding: 20px 0 40px;
+  text-decoration: none;
 }
 
 .right-side{
