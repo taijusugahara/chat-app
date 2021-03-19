@@ -4,7 +4,9 @@
   <div class="left-side">
     <%= render "side_bar" %>
     <div class="left-top">
-      <div class="user-name"> <a href='#'>Tom</a></div>
+      <div class="user-name"> 
+      <%= link_to current_user.name, edit_user_path(current_user) %>
+      </div>
       <div class="chat-create"> <a href='#'>チャットを作成する</a></div>
     </div>   
     <div class="left-bottom">
