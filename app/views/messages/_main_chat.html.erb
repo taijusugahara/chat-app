@@ -35,23 +35,18 @@
 
 
     <div class="right-bottom">
-      <div class="form">
-       <div class="text">
-        <input class="form-message" placeholder= "type a message">
-        <label class="form-image">
-          <span class="image-file">画像</span>
-          <input type="file" class="hidden">
-        </label>
-       </div>
-        <div class="send">
-          <input class="form-submit" type="submit" value="送信">
+      <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
+        <div class="form">
+        <div class="text">
+            <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
+            <label class="form-image">
+              <span class="image-file">画像</span>
+              <%= f.file_field :image, class: 'hidden' %>
+            </label>
         </div>
-
-
-       
-      
-      
-      
-      </div>
-      
+          <div class="send">
+            <%= f.submit '送信', class: 'form-submit' %>
+          </div>
+        </div>
+      <% end %>
     </div>
