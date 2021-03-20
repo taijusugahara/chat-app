@@ -137,6 +137,7 @@ height:100vh;
 
 .form{
   display:flex;
+  width:100%;
 }
 
 .text{
@@ -175,3 +176,7 @@ height:100vh;
 .hidden {
   display: none;
 }
+
+
+
+
