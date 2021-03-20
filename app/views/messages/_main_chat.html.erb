@@ -9,28 +9,7 @@
     </div>
 
     <div class="right-center">
-      <div class="messages">
-        <div class="middle">
-          <div class="user">Tom
-          </div>
-          <div class="time">2020/3/31(Wed) 12:43:30
-          </div>
-        </div>
-        <div class="message">おはよう
-        </div>
-      </div>
-  
-
-      <div class="messages">
-        <div class="middle">
-          <div class="user">Tom
-          </div>
-          <div class="time">2020/3/31(Wed) 12:47:30
-          </div>
-        </div>
-        <div class="message">こんばんわ
-        </div>
-      </div>
+      <%= render partial: 'message', collection: @messages %>
     </div>
 
 
