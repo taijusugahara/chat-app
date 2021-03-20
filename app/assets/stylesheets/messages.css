@@ -24,7 +24,7 @@ height:100vh;
   text-decoration: none;
 }
 
-.chat-create a {
+.chat-create a{
   border: 1px solid lightblue;
   padding:14px;
   font-size:10px;
